@@ -705,16 +705,258 @@
         🐟 Selami ilmu baru setiap harinya! 🌊
       </p>
 
-      <a href="https://hakim-forever.github.io/Akuakultur/" target="_blank" class="btn-start">
+      <button onclick="openDaftarIsi()" class="btn-start">
         🚀 Mulai Belajar
-      </a>
+      </button>
     </div>
 
   </section>
 </div>
 
+<!-- ============ DAFTAR ISI MODAL ============ -->
+<div id="daftarIsiOverlay" style="display:none;">
+  <div id="diBackdrop" onclick="closeDaftarIsi()"></div>
+  <div id="diPanel">
+    <button id="diClose" onclick="closeDaftarIsi()" aria-label="Tutup">✕</button>
+    <div id="diContent">
+
+      <div class="di-hero">
+        <div class="di-eyebrow">🌊 Kurikulum Lengkap Berbasis Pilar</div>
+        <h2 class="di-title">Daftar Isi <span class="di-accent">Akuakultur & Perikanan</span></h2>
+        <p class="di-desc">Jelajahi materi lengkap dari produksi budidaya hingga bisnis perikanan.</p>
+        <div class="di-stats">
+          <div class="di-stat"><span class="di-stat-n">4</span><span class="di-stat-l">Pilar Utama</span></div>
+          <div class="di-stat-div"></div>
+          <div class="di-stat"><span class="di-stat-n">14</span><span class="di-stat-l">Sub-Materi</span></div>
+          <div class="di-stat-div"></div>
+          <div class="di-stat"><span class="di-stat-n">∞</span><span class="di-stat-l">Referensi</span></div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:flex-end;margin-bottom:1rem;">
+        <button class="di-theme-btn" id="diThemeBtn" onclick="toggleDiTheme()">
+          <span id="diThemeIcon">🌙</span><span id="diThemeLabel">Mode Gelap</span>
+        </button>
+      </div>
+
+      <div class="di-section-label">Pilih Pilar Materi</div>
+
+      <div class="di-grid">
+
+        <!-- PILAR 1 -->
+        <div class="di-card">
+          <div class="di-card-header">
+            <div class="di-header-inner">
+              <div class="di-pilar-num">Pilar 01</div>
+              <h3>Produksi & Manajemen Budidaya</h3>
+            </div>
+            <span class="di-hicon">🌾</span>
+          </div>
+          <div class="di-stripe di-stripe-1"></div>
+          <div class="di-list">
+            <div class="di-item"><a href="https://hakim-forever.github.io/Akuakultur/" target="_blank" rel="noopener noreferrer"><span class="di-ico">📌</span><div class="di-text"><div class="di-ititle">Dasar-Dasar Akuakultur</div><div class="di-tags"><span class="di-tag">Sistem Budidaya</span><span class="di-tag">RAS</span><span class="di-tag">Bioflok</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🧬</span><div class="di-text"><div class="di-ititle">Pembenihan dan Pemuliaan Biota Air</div><div class="di-tags"><span class="di-tag">Breeding</span><span class="di-tag">Genetika</span><span class="di-tag">Manajemen Larva</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🌊</span><div class="di-text"><div class="di-ititle">Manajemen Akuakultur Tawar, Payau & Laut</div><div class="di-tags"><span class="di-tag">Nila</span><span class="di-tag">Udang Vaname</span><span class="di-tag">KJA Offshore</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🍃</span><div class="di-text"><div class="di-ititle">Teknologi Budidaya Pakan Alami</div><div class="di-tags"><span class="di-tag">Fitoplankton</span><span class="di-tag">Zooplankton</span><span class="di-tag">Artemia</span></div></div><span class="di-arr">→</span></a></div>
+          </div>
+        </div>
+
+        <!-- PILAR 2 -->
+        <div class="di-card">
+          <div class="di-card-header">
+            <div class="di-header-inner">
+              <div class="di-pilar-num">Pilar 02</div>
+              <h3>Kesehatan & Lingkungan Perairan</h3>
+            </div>
+            <span class="di-hicon">🔬</span>
+          </div>
+          <div class="di-stripe di-stripe-2"></div>
+          <div class="di-list">
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🌍</span><div class="di-text"><div class="di-ititle">Limnologi & Oseanografi</div><div class="di-tags"><span class="di-tag">Perairan Darat</span><span class="di-tag">Dinamika Laut</span><span class="di-tag">Turnover</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">💧</span><div class="di-text"><div class="di-ititle">Manajemen Kualitas Air</div><div class="di-tags"><span class="di-tag">DO</span><span class="di-tag">Siklus Nitrogen</span><span class="di-tag">pH</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🦠</span><div class="di-text"><div class="di-ititle">Hama dan Penyakit Ikan</div><div class="di-tags"><span class="di-tag">Virologi</span><span class="di-tag">Bakteriologi</span><span class="di-tag">Biosekuriti</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🧪</span><div class="di-text"><div class="di-ititle">Imunologi Organisme Akuatik</div><div class="di-tags"><span class="di-tag">Imun Non-Spesifik</span><span class="di-tag">Vaksinasi</span><span class="di-tag">Probiotik</span></div></div><span class="di-arr">→</span></a></div>
+          </div>
+        </div>
+
+        <!-- PILAR 3 -->
+        <div class="di-card">
+          <div class="di-card-header">
+            <div class="di-header-inner">
+              <div class="di-pilar-num">Pilar 03</div>
+              <h3>Biologi, Nutrisi & Fisiologi</h3>
+            </div>
+            <span class="di-hicon">🐟</span>
+          </div>
+          <div class="di-stripe di-stripe-3"></div>
+          <div class="di-list">
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🐟</span><div class="di-text"><div class="di-ititle">Ikhtiologi</div><div class="di-tags"><span class="di-tag">Anatomi</span><span class="di-tag">Morfologi</span><span class="di-tag">Taksonomi</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">🍽️</span><div class="di-text"><div class="di-ititle">Nutrisi dan Teknologi Pakan Ikan</div><div class="di-tags"><span class="di-tag">Formulasi Pearson</span><span class="di-tag">Kebutuhan Nutrisi</span><span class="di-tag">Pelet</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">⚙️</span><div class="di-text"><div class="di-ititle">Fisiologi Hewan Air & Endokrinologi</div><div class="di-tags"><span class="di-tag">Osmoregulasi</span><span class="di-tag">Bioenergetika</span><span class="di-tag">Sistem Hormon</span></div></div><span class="di-arr">→</span></a></div>
+          </div>
+        </div>
+
+        <!-- PILAR 4 -->
+        <div class="di-card">
+          <div class="di-card-header">
+            <div class="di-header-inner">
+              <div class="di-pilar-num">Pilar 04</div>
+              <h3>Pendukung & Bisnis Perikanan</h3>
+            </div>
+            <span class="di-hicon">📈</span>
+          </div>
+          <div class="di-stripe di-stripe-4"></div>
+          <div class="di-list">
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">📈</span><div class="di-text"><div class="di-ititle">Kewirausahaan Perikanan</div><div class="di-tags"><span class="di-tag">Tren Pasar</span><span class="di-tag">Business Plan</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">💰</span><div class="di-text"><div class="di-ititle">Analisis Kelayakan Usaha Perikanan</div><div class="di-tags"><span class="di-tag">CapEx/OpEx</span><span class="di-tag">NPV</span><span class="di-tag">IRR</span><span class="di-tag">R/C Ratio</span></div></div><span class="di-arr">→</span></a></div>
+            <div class="di-item"><a href="https://hakim-forever.github.io/Tentang-ikan/" target="_blank" rel="noopener noreferrer"><span class="di-ico">📢</span><div class="di-text"><div class="di-ititle">Penyuluhan dan Komunikasi Perikanan</div><div class="di-tags"><span class="di-tag">Metodologi Penyuluhan</span><span class="di-tag">Adopsi Inovasi</span></div></div><span class="di-arr">→</span></a></div>
+          </div>
+        </div>
+
+      </div><!-- /di-grid -->
+
+      <div class="di-footer">
+        <div class="di-footer-title">🌊 Daftar Isi Interaktif Akuakultur</div>
+        <div class="di-footer-sub">Untuk Jihan tercinta</div>
+        <div class="di-dots"><span class="di-dot"></span><span class="di-dot"></span><span class="di-dot"></span></div>
+      </div>
+
+    </div><!-- /diContent -->
+  </div><!-- /diPanel -->
+</div>
+
+<style>
+#daftarIsiOverlay {
+  position: fixed; inset: 0; z-index: 5000;
+  display: flex; align-items: center; justify-content: center;
+}
+#diBackdrop {
+  position: absolute; inset: 0;
+  background: rgba(0,10,20,0.78);
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+  animation: diBackIn 0.3s ease;
+}
+@keyframes diBackIn { from{opacity:0} to{opacity:1} }
+#diPanel {
+  position: relative; z-index: 1;
+  width: min(95vw, 1180px);
+  max-height: 92vh;
+  border-radius: 28px;
+  overflow: hidden;
+  display: flex; flex-direction: column;
+  box-shadow: 0 30px 80px rgba(0,0,0,0.55);
+  animation: diPanelIn 0.35s cubic-bezier(.22,.68,0,1.2);
+  background: var(--di-bg, #f0f9ff);
+  transition: background 0.3s;
+}
+@keyframes diPanelIn {
+  from{opacity:0;transform:scale(0.88) translateY(30px)}
+  to  {opacity:1;transform:scale(1) translateY(0)}
+}
+#diClose {
+  position: absolute; top:14px; right:16px; z-index:10;
+  background: rgba(0,0,0,0.18); border:none; color:white;
+  font-size:1.1rem; width:34px; height:34px; border-radius:50%;
+  cursor:pointer; display:flex; align-items:center; justify-content:center;
+  transition: background 0.2s, transform 0.2s;
+}
+#diClose:hover { background:rgba(255,255,255,0.28); transform:scale(1.1) rotate(90deg); }
+#diContent {
+  overflow-y:auto; overflow-x:hidden;
+  padding:2rem 1.5rem 2.5rem; flex:1; scroll-behavior:smooth;
+}
+#diContent::-webkit-scrollbar{width:5px}
+#diContent::-webkit-scrollbar-thumb{background:rgba(14,116,144,0.3);border-radius:3px}
+
+/* theme vars */
+#daftarIsiOverlay[data-theme="light"] #diPanel{--di-bg:#f0f9ff;--di-card:#fff;--di-card2:#f8fbff;--di-pill:#e0f2fe;--di-tp:#0a2030;--di-ts:#2c6e8a;--di-tm:#5898b0;--di-bdr:rgba(14,116,144,0.15);--di-ptxt:#0e7490;--di-hgrad:linear-gradient(135deg,#022b3a 0%,#0a4a63 60%,#0e7490 100%)}
+#daftarIsiOverlay[data-theme="dark"]  #diPanel{--di-bg:#01151f;--di-card:#031d2b;--di-card2:#042435;--di-pill:rgba(14,116,144,0.25);--di-tp:#e0f7ff;--di-ts:#7dd3fc;--di-tm:#4aaece;--di-bdr:rgba(34,211,238,0.12);--di-ptxt:#67e8f9;--di-hgrad:linear-gradient(135deg,#011520 0%,#022b3a 60%,#0a4a63 100%)}
+
+.di-hero{text-align:center;padding:1.5rem 0 1.6rem}
+.di-eyebrow{display:inline-flex;align-items:center;gap:7px;font-size:.72rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:#0e7490;background:var(--di-pill);padding:5px 14px;border-radius:50px;border:1px solid var(--di-bdr);margin-bottom:1rem;font-family:'Nunito',sans-serif}
+.di-title{font-family:'Baloo 2',cursive;font-size:clamp(1.5rem,4vw,2.6rem);font-weight:800;color:var(--di-tp);line-height:1.15;margin-bottom:.6rem}
+.di-accent{background:linear-gradient(120deg,#0e7490,#22d3ee,#6ee7b7);-webkit-background-clip:text;background-clip:text;color:transparent}
+.di-desc{font-size:.93rem;color:var(--di-ts);max-width:420px;margin:0 auto;line-height:1.6;font-family:'Nunito',sans-serif}
+.di-stats{display:flex;justify-content:center;align-items:center;gap:1.4rem;margin-top:1.2rem;flex-wrap:wrap}
+.di-stat{text-align:center}
+.di-stat-n{font-family:'Baloo 2',cursive;font-size:1.5rem;font-weight:800;color:#0e7490;display:block;line-height:1}
+.di-stat-l{font-size:.65rem;color:var(--di-tm);text-transform:uppercase;letter-spacing:.08em;font-family:'Nunito',sans-serif}
+.di-stat-div{width:1px;height:34px;background:var(--di-bdr)}
+.di-theme-btn{display:inline-flex;align-items:center;gap:7px;background:var(--di-card);border:1.5px solid var(--di-bdr);border-radius:50px;padding:6px 14px;font-size:.78rem;font-weight:600;color:var(--di-ts);cursor:pointer;font-family:'Nunito',sans-serif;transition:border-color .2s,box-shadow .2s}
+.di-theme-btn:hover{border-color:#22d3ee;box-shadow:0 0 0 3px rgba(34,211,238,.15)}
+.di-section-label{font-size:.66rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--di-tm);text-align:center;margin-bottom:1.1rem;display:flex;align-items:center;gap:12px;font-family:'Nunito',sans-serif}
+.di-section-label::before,.di-section-label::after{content:'';flex:1;height:1px;background:var(--di-bdr)}
+.di-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.1rem}
+.di-card{background:var(--di-card);border-radius:20px;border:1.5px solid var(--di-bdr);overflow:hidden;transition:transform .25s cubic-bezier(.22,.68,0,1.2),box-shadow .25s,border-color .25s;box-shadow:0 2px 12px rgba(2,43,58,.07)}
+.di-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(2,43,58,.15);border-color:#22d3ee}
+.di-card-header{background:var(--di-hgrad);padding:1.1rem 1.2rem 2.1rem;position:relative;overflow:hidden}
+.di-card-header::before{content:'';position:absolute;bottom:-15px;left:-10%;width:120%;height:34px;background:var(--di-card);border-radius:50% 50% 0 0;z-index:0}
+.di-header-inner{position:relative;z-index:2}
+.di-pilar-num{font-size:.6rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#67e8f9;opacity:.85;margin-bottom:4px;display:flex;align-items:center;gap:5px;font-family:'Nunito',sans-serif}
+.di-pilar-num::before{content:'';display:inline-block;width:13px;height:1.5px;background:#67e8f9;opacity:.6}
+.di-card-header h3{font-family:'Baloo 2',cursive;font-size:1rem;font-weight:700;color:#fff;line-height:1.3}
+.di-hicon{position:absolute;right:1.1rem;top:50%;transform:translateY(-60%);font-size:1.9rem;opacity:.18;pointer-events:none;z-index:1}
+.di-stripe{height:3px;position:relative;z-index:2}
+.di-stripe-1{background:linear-gradient(90deg,#22d3ee,#6ee7b7)}
+.di-stripe-2{background:linear-gradient(90deg,#0ea5e9,#22d3ee)}
+.di-stripe-3{background:linear-gradient(90deg,#14b8a6,#6ee7b7)}
+.di-stripe-4{background:linear-gradient(90deg,#f97316,#fbbf24)}
+.di-list{padding:.75rem .75rem 1.1rem;display:flex;flex-direction:column;gap:.38rem}
+.di-item a{display:flex;align-items:center;gap:9px;text-decoration:none;padding:.7rem .85rem;border-radius:12px;background:var(--di-card2);border:1.5px solid transparent;transition:all .2s ease;position:relative;overflow:hidden}
+.di-item a::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:linear-gradient(180deg,#0e7490,#22d3ee);border-radius:0 3px 3px 0;opacity:0;transform:scaleY(.4);transition:all .2s ease}
+.di-item a:hover{background:var(--di-pill);border-color:rgba(34,211,238,.3);transform:translateX(4px)}
+.di-item a:hover::before{opacity:1;transform:scaleY(1)}
+.di-ico{font-size:1.1rem;flex-shrink:0;transition:transform .3s}
+.di-item a:hover .di-ico{transform:scale(1.2) rotate(-5deg)}
+.di-text{flex:1;min-width:0}
+.di-ititle{font-size:.83rem;font-weight:600;color:var(--di-tp);line-height:1.35;transition:color .2s;font-family:'Nunito',sans-serif}
+.di-item a:hover .di-ititle{color:#0e7490}
+.di-tags{display:flex;flex-wrap:wrap;gap:3px;margin-top:4px}
+.di-tag{font-size:.6rem;font-weight:600;color:var(--di-ptxt);background:var(--di-pill);padding:2px 7px;border-radius:50px;border:1px solid var(--di-bdr);transition:background .2s;font-family:'Nunito',sans-serif}
+.di-item a:hover .di-tag{background:rgba(34,211,238,.15);border-color:rgba(34,211,238,.35)}
+.di-arr{font-size:.82rem;color:var(--di-tm);opacity:0;transform:translateX(-6px);transition:all .2s;flex-shrink:0}
+.di-item a:hover .di-arr{opacity:1;transform:translateX(0)}
+.di-footer{text-align:center;margin-top:1.8rem;padding:1.1rem;background:var(--di-card);border-radius:14px;border:1.5px solid var(--di-bdr)}
+.di-footer-title{font-family:'Baloo 2',cursive;font-size:.9rem;font-weight:700;color:var(--di-tp)}
+.di-footer-sub{font-size:.75rem;color:var(--di-tm);margin-top:3px;font-family:'Nunito',sans-serif}
+.di-dots{display:flex;gap:6px;justify-content:center;margin-top:9px}
+.di-dot{width:6px;height:6px;border-radius:50%;background:#0e7490;opacity:.35;animation:diDotPulse 2s ease-in-out infinite}
+.di-dot:nth-child(2){animation-delay:.3s;background:#22d3ee}
+.di-dot:nth-child(3){animation-delay:.6s;background:#6ee7b7}
+@keyframes diDotPulse{0%,100%{transform:scale(1);opacity:.35}50%{transform:scale(1.45);opacity:.9}}
+@media(max-width:600px){
+  #diContent{padding:1.2rem 1rem 2rem}
+  .di-grid{grid-template-columns:1fr;gap:.85rem}
+  .di-title{font-size:1.4rem}
+  .di-stat-div{display:none}
+}
+</style>
+
 <script>
-  // Generate bubbles
+  // ── DAFTAR ISI MODAL ──
+  const diOverlay = document.getElementById('daftarIsiOverlay');
+  diOverlay.setAttribute('data-theme', 'light');
+
+  function openDaftarIsi(){
+    diOverlay.style.display = 'flex';
+    document.body.style.overflow = 'hidden';
+  }
+  function closeDaftarIsi(){
+    diOverlay.style.display = 'none';
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => { if(e.key === 'Escape') closeDaftarIsi(); });
+
+  let diTheme = 'light';
+  function toggleDiTheme(){
+    diTheme = diTheme === 'light' ? 'dark' : 'light';
+    diOverlay.setAttribute('data-theme', diTheme);
+    document.getElementById('diThemeIcon').textContent = diTheme === 'dark' ? '☀️' : '🌙';
+    document.getElementById('diThemeLabel').textContent = diTheme === 'dark' ? 'Mode Terang' : 'Mode Gelap';
+  }
+
+// Generate bubbles
   const uw = document.querySelector('.underwater-section');
   for(let i = 0; i < 20; i++){
     const b = document.createElement('div');
